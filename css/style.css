@@ -1,0 +1,12 @@
+body {
+	margin: 50px;
+}
+
+.message {
+	margin: 50px 0;
+}
+
+.message span {
+	display: inline-block;
+	border-bottom: dashed 1px;
+}
