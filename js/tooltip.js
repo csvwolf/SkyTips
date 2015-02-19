@@ -3,7 +3,7 @@ $(function(){
 		var setting = $(this).attr('tooltip-settings');
 		var content = $(this).attr('tooltip-content');
 		if (setting && content) {
-			$(this).prepend('<div class="tooltip jquery-tooltip ' + setting +'">' + content + '</div>');
+			$(this).prepend('<span class="tooltip jquery-tooltip ' + setting +'">' + content + '</span>');
 		}
 		return false;
 	}, function(event) {

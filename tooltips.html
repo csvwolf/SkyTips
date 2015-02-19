@@ -7,6 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="css/tooltip.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/tooltip.js"></script>
+	<style type="text/css">
+		body {
+			height: 300px;
+			width: 300px;
+			margin: 0 auto;
+		}
+	</style>
 </head>
 <body>
 <!-- <div class="tooltip top">Hello</div>
@@ -15,10 +22,11 @@
 <div class="tooltip right">Hello</div>
  -->
 <div class="message">This is <span class="ontips" tooltip-settings="bottom" tooltip-content="Hello<br/>你好">Message Test</span>....</div>
-<div class="message">This is <span class="ontips">Message<div class="tooltip bottom custom success">Hello</div></span>....</div>
+<div class="message">This is <span class="ontips">Message<div class="tooltip bottom custom default">Hello</div></span>....</div>
 <div class="message">This is <span class="ontips">Message<div class="tooltip left custom success">Hello <br/>你好</div></span>....</div>
-<div class="message">This is <span class="ontips">Message<div class="tooltip right custom success">Hello</div></span>....</div>
-<div class="ontips">12312424<div class="tooltip bottom">Hello</div></div>
+<div class="message">This is <span class="ontips">Message<div class="tooltip right custom info">Hello</div></span>....</div>
+<div class="message">This is <span class="ontips">Message<div class="tooltip bottom custom danger">Hello</div></span>....</div>
+<div class="message">This is <span class="ontips">Message<div class="tooltip right custom warning">Hello</div></span>....</div>
 
 </body>
 </html>

@@ -120,54 +120,124 @@
 
 /* default: #aaa; */
 .tooltip.default {
-	border-color: rgba(204, 204, 204, 0.95);
+	border-color: rgba(207, 207, 207, 0.95);
 	background: rgba(255, 255, 255, 0.95);
 	color: #000;
 }
 
 .tooltip.top.default:before {
-	border-color: rgba(204, 204, 204, 0.95) transparent transparent transparent;
+	border-color: rgba(207, 207, 207, 0.95) transparent transparent transparent;
 }
 
 .tooltip.bottom.default:before {
-	border-color: transparent transparent rgba(204, 204, 204, 0.95) transparent;
+	border-color: transparent transparent rgba(207, 207, 207, 0.95) transparent;
 }
 
 .tooltip.left.default:before {
-	border-color: transparent transparent transparent rgba(204, 204, 204, 0.95);
+	border-color: transparent transparent transparent rgba(207, 207, 207, 0.95);
 }
 
 .tooltip.right.default:before {
-	border-color: transparent rgba(204, 204, 204, 0.95) transparent transparent;
+	border-color: transparent rgba(207, 207, 207, 0.95) transparent transparent;
 }
 
 /* success */
 .tooltip.success {
-	border-color: rgba(19, 201, 34, 0.95);
-	background: rgba(102, 206, 64, 0.95);
-	color: #288715;
+	border-color: rgba(108, 202, 22, 0.95);
+	background: rgba(154, 241, 74, 0.95);
+	color: #336600;
 }
 
 .tooltip.top.success:before {
-	border-color: rgba(19, 201, 34, 0.95) transparent transparent transparent;
+	border-color: rgba(108, 202, 22, 0.95) transparent transparent transparent;
 }
 
 .tooltip.bottom.success:before {
-	border-color: transparent transparent rgba(19, 201, 34, 0.95) transparent;
+	border-color: transparent transparent rgba(108, 202, 22, 0.95) transparent;
 }
 
 .tooltip.left.success:before {
-	border-color: transparent transparent transparent rgba(19, 201, 34, 0.95);
+	border-color: transparent transparent transparent rgba(108, 202, 22, 0.95);
 }
 
 .tooltip.right.success:before {
-	border-color: transparent rgba(19, 201, 34, 0.95) transparent transparent;
+	border-color: transparent rgba(108, 202, 22, 0.95) transparent transparent;
+}
+
+/* info */
+.tooltip.info {
+	border-color: rgba(0, 90, 120, 0.95);
+	background: rgba(34, 143, 189, 0.95);
+	color: #00214F;
+}
+
+.tooltip.top.info:before {
+	border-color: rgba(0, 90, 120, 0.95) transparent transparent transparent;
+}
+
+.tooltip.bottom.info:before {
+	border-color: transparent transparent rgba(0, 90, 120, 0.95) transparent;
+}
+
+.tooltip.left.info:before {
+	border-color: transparent transparent transparent rgba(0, 90, 120, 0.95);
+}
+
+.tooltip.right.info:before {
+	border-color: transparent rgba(0, 90, 120, 0.95) transparent transparent;
+}
+
+/* warning */
+.tooltip.warning {
+	border-color: rgba(241, 146, 0, 0.95);
+	background: rgba(245, 171, 0, 0.95);
+	color: #733C12;
+}
+
+.tooltip.top.warning:before {
+	border-color: rgba(241, 146, 0, 0.95) transparent transparent transparent;
+}
+
+.tooltip.bottom.warning:before {
+	border-color: transparent transparent rgba(241, 146, 0, 0.95) transparent;
+}
+
+.tooltip.left.warning:before {
+	border-color: transparent transparent transparent rgba(241, 146, 0, 0.95);
+}
+
+.tooltip.right.warning:before {
+	border-color: transparent rgba(241, 146, 0, 0.95) transparent transparent;
+}
+
+/* danger */
+.tooltip.danger {
+	border-color: rgba(128, 24, 24, 0.95);
+	background: rgba(219, 69, 39, 0.95);
+	color: #6E280E;
+}
+
+.tooltip.top.danger:before {
+	border-color: rgba(128, 24, 24, 0.95) transparent transparent transparent;
+}
+
+.tooltip.bottom.danger:before {
+	border-color: transparent transparent rgba(128, 24, 24, 0.95) transparent;
+}
+
+.tooltip.left.danger:before {
+	border-color: transparent transparent transparent rgba(128, 24, 24, 0.95);
+}
+
+.tooltip.right.danger:before {
+	border-color: transparent rgba(128, 24, 24, 0.95) transparent transparent;
 }
 
 
 /* selected part */
 .ontips {
 	position: relative;
+	display: inline;
 }
 
 .ontips:hover .tooltip {
