@@ -1,9 +1,9 @@
 $(function(){
 	$('.ontips').hover(function(event) {
 		var setting = $(this).attr('tooltip-settings');
-		var title = $(this).attr('title');
-		if (setting && title) {
-			$(this).prepend('<div class="tooltip jquery-tooltip ' + setting +'">' + title + '</div>');
+		var content = $(this).attr('tooltip-content');
+		if (setting && content) {
+			$(this).prepend('<div class="tooltip jquery-tooltip ' + setting +'">' + content + '</div>');
 		}
 		return false;
 	}, function(event) {
