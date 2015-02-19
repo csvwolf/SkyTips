@@ -1,5 +1,5 @@
-/* tooltip default style */
-.tooltip {
+/* skytip default style */
+.skytip {
 	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.95);
 	color: #ffffff;
 	display: none;
@@ -13,37 +13,37 @@
 	z-index: 999;
 }
 
-/* tooltip position */
-.tooltip.bottom {
+/* skytip position */
+.skytip.bottom {
 	margin-top: 5px;
 	left: 50%;
 	top: 100%;
 	transform: translateX(-50%);
 }
 
-.tooltip.right {
+.skytip.right {
 	left: 100%;
 	bottom: 50%;
 	transform: translateY(50%);
 	margin-left: 10px;
 }
 
-.tooltip.left {
+.skytip.left {
 	right: 100%;
 	bottom: 50%;
 	transform: translateY(50%);	
 	margin-right: 10px;
 }
 
-.tooltip.top {
+.skytip.top {
 	bottom: 100%;
 	left: 50%;
 	transform: translateX(-50%);
 	margin-bottom: 5px;
 }
 
-/* tooltip triangle */
-.tooltip:before {
+/* skytip triangle */
+.skytip:before {
 	border-width: 5px;
 	content: "";
 	display: block;
@@ -52,8 +52,8 @@
 }
 
 
-/* tooltip default triangle */
-.tooltip.top:before {
+/* skytip default triangle */
+.skytip.top:before {
 	border-color: rgba(0, 0, 0, 0.95) transparent transparent;
 	border-style: solid dashed dashed;
 	left: 50%;
@@ -61,7 +61,7 @@
 	margin-left: -5px;
 }
 
-.tooltip.bottom:before {
+.skytip.bottom:before {
 	border-color: transparent transparent rgba(0, 0, 0, 0.95) transparent;
 	border-style: dashed dashed solid dashed;
 	left: 50%;
@@ -69,7 +69,7 @@
 	margin-left: -5px;
 }
 
-.tooltip.right:before {
+.skytip.right:before {
 	border-color: transparent rgba(0, 0, 0, 0.95) transparent transparent;
 	border-style: dashed solid dashed dashed;
 	right: 100%;
@@ -77,7 +77,7 @@
 	margin-top: -5px;
 }
 
-.tooltip.left:before {
+.skytip.left:before {
 	border-color: transparent transparent transparent rgba(0, 0, 0, 0.95);
 	border-style: dashed dashed dashed solid;
 	left: 100%;
@@ -85,151 +85,151 @@
 	margin-top: -5px;
 }
 
-/* tooltip custom style */
-.tooltip.custom {
+/* skytip custom style */
+.skytip.custom {
 	border: 3px solid;
 }
 
-.tooltip.top.custom, .tooltip.bottom.custom {
+.skytip.top.custom, .skytip.bottom.custom {
 	margin-top: 8px;
 }
 
-.tooltip.left.custom {
+.skytip.left.custom {
 	margin-left: 8px;
 }
 
-.tooltip.right.custom {
+.skytip.right.custom {
 	margin-right: 8px;
 }
 
-.tooltip.top.custom:before {
+.skytip.top.custom:before {
 	margin-top: 3px;
 }
 
-.tooltip.bottom.custom:before {
+.skytip.bottom.custom:before {
 	margin-bottom: 3px;
 }
 
-.tooltip.left.custom:before {
+.skytip.left.custom:before {
 	margin-left: 3px;
 }
 
-.tooltip.right.custom:before {
+.skytip.right.custom:before {
 	margin-right: 3px;
 }
 
 /* default: #aaa; */
-.tooltip.default {
+.skytip.primary {
 	border-color: rgba(207, 207, 207, 0.95);
 	background: rgba(255, 255, 255, 0.95);
 	color: #000;
 }
 
-.tooltip.top.default:before {
+.skytip.top.primary:before {
 	border-color: rgba(207, 207, 207, 0.95) transparent transparent transparent;
 }
 
-.tooltip.bottom.default:before {
+.skytip.bottom.primary:before {
 	border-color: transparent transparent rgba(207, 207, 207, 0.95) transparent;
 }
 
-.tooltip.left.default:before {
+.skytip.left.primary:before {
 	border-color: transparent transparent transparent rgba(207, 207, 207, 0.95);
 }
 
-.tooltip.right.default:before {
+.skytip.right.primary:before {
 	border-color: transparent rgba(207, 207, 207, 0.95) transparent transparent;
 }
 
 /* success */
-.tooltip.success {
+.skytip.success {
 	border-color: rgba(108, 202, 22, 0.95);
 	background: rgba(154, 241, 74, 0.95);
 	color: #336600;
 }
 
-.tooltip.top.success:before {
+.skytip.top.success:before {
 	border-color: rgba(108, 202, 22, 0.95) transparent transparent transparent;
 }
 
-.tooltip.bottom.success:before {
+.skytip.bottom.success:before {
 	border-color: transparent transparent rgba(108, 202, 22, 0.95) transparent;
 }
 
-.tooltip.left.success:before {
+.skytip.left.success:before {
 	border-color: transparent transparent transparent rgba(108, 202, 22, 0.95);
 }
 
-.tooltip.right.success:before {
+.skytip.right.success:before {
 	border-color: transparent rgba(108, 202, 22, 0.95) transparent transparent;
 }
 
 /* info */
-.tooltip.info {
+.skytip.info {
 	border-color: rgba(0, 90, 120, 0.95);
 	background: rgba(34, 143, 189, 0.95);
 	color: #00214F;
 }
 
-.tooltip.top.info:before {
+.skytip.top.info:before {
 	border-color: rgba(0, 90, 120, 0.95) transparent transparent transparent;
 }
 
-.tooltip.bottom.info:before {
+.skytip.bottom.info:before {
 	border-color: transparent transparent rgba(0, 90, 120, 0.95) transparent;
 }
 
-.tooltip.left.info:before {
+.skytip.left.info:before {
 	border-color: transparent transparent transparent rgba(0, 90, 120, 0.95);
 }
 
-.tooltip.right.info:before {
+.skytip.right.info:before {
 	border-color: transparent rgba(0, 90, 120, 0.95) transparent transparent;
 }
 
 /* warning */
-.tooltip.warning {
+.skytip.warning {
 	border-color: rgba(241, 146, 0, 0.95);
 	background: rgba(245, 171, 0, 0.95);
 	color: #733C12;
 }
 
-.tooltip.top.warning:before {
+.skytip.top.warning:before {
 	border-color: rgba(241, 146, 0, 0.95) transparent transparent transparent;
 }
 
-.tooltip.bottom.warning:before {
+.skytip.bottom.warning:before {
 	border-color: transparent transparent rgba(241, 146, 0, 0.95) transparent;
 }
 
-.tooltip.left.warning:before {
+.skytip.left.warning:before {
 	border-color: transparent transparent transparent rgba(241, 146, 0, 0.95);
 }
 
-.tooltip.right.warning:before {
+.skytip.right.warning:before {
 	border-color: transparent rgba(241, 146, 0, 0.95) transparent transparent;
 }
 
 /* danger */
-.tooltip.danger {
+.skytip.danger {
 	border-color: rgba(128, 24, 24, 0.95);
 	background: rgba(219, 69, 39, 0.95);
 	color: #6E280E;
 }
 
-.tooltip.top.danger:before {
+.skytip.top.danger:before {
 	border-color: rgba(128, 24, 24, 0.95) transparent transparent transparent;
 }
 
-.tooltip.bottom.danger:before {
+.skytip.bottom.danger:before {
 	border-color: transparent transparent rgba(128, 24, 24, 0.95) transparent;
 }
 
-.tooltip.left.danger:before {
+.skytip.left.danger:before {
 	border-color: transparent transparent transparent rgba(128, 24, 24, 0.95);
 }
 
-.tooltip.right.danger:before {
+.skytip.right.danger:before {
 	border-color: transparent rgba(128, 24, 24, 0.95) transparent transparent;
 }
 
@@ -240,7 +240,7 @@
 	display: inline;
 }
 
-.ontips:hover .tooltip {
+.ontips:hover .skytip {
 	display: inline-block;
 	animation: fadeIn 0.4s;
 }

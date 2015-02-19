@@ -2,21 +2,21 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>SkyTips!</title>
+	<title>Home - SkyTips!</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/tooltip.css">
+	<link rel="stylesheet" type="text/css" href="css/skytip.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/tooltip.js"></script>
+	<script type="text/javascript" src="js/skytip.js"></script>
 </head>
 <body>
 	<header>
-		<h1 tooltip-settings="bottom custom default" tooltip-content="Just a tooltip" class="ontips">SkyTips!</h1>
+		<h1 title="Just a skytip" skytip-settings="bottom custom primary" skytip-content="Just a skytip" class="ontips">SkyTips!</h1>
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">How to Use</a></li>
-				<li><a href="#">Airzone</a></li>
-				<li><a href="#">CodeSky</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="how-to-use.html">How to Use</a></li>
+				<li><a href="http://xsky.me" target="_blank">Airzone</a></li>
+				<li><a href="http://codesky.me" target="_blank">CodeSky</a></li>
 			</ul>
 		</nav>
 		<!-- <div class="ribbon"><span>Hello World</span></div> -->
@@ -24,22 +24,25 @@
 	<div class="container">
 		<div class="big-header">
 			<h2>SkyTips!</h2>
-			<span class="introduce">不知道该说些什么好……</span>
+			<span class="introduce">可以用CSS就不用Javascript</span>
 		</div>
 		<div class="content">
 			<h3>示例</h3>
 			<p>这里是一个简单的示例。</p>
-			<p>你可以在这里看到各方向的<span class="ontips">SkyTips<span class="tooltip top">一个简单的Tooltip</span></span></p>
+			<p>你可以在这里看到各方向的<span class="ontips">SkyTips<span class="skytip top">一个简单的Tooltips</span></span></p>
 			<p>在header处，我们使用了jQuery的方法进行演示（请Hover Navbar中的SkyTips）</p>
 			<p>
-				<span class="ontips">上<span class="tooltip top">;-)，向上的简单SkyTip</span></span>！
-				<span class="ontips">下<span class="tooltip bottom custom success">;-)，向下的简单SkyTip</span></span>！
-				<span class="ontips">左<span class="tooltip left default">;-)，向左的简单SkyTip</span></span>！
-				<span class="ontips">右<span class="tooltip right">;-)，向右的简单SkyTip</span></span>！
+				<span class="ontips">上<span class="skytip top">;-)，向上的简单SkyTip</span></span>！
+				<span class="ontips">下<span class="skytip bottom custom success">;-)，向下的简单SkyTip</span></span>！
+				<span class="ontips">左<span class="skytip left custom primary">;-)，向左的简单SkyTip</span></span>！
+				<span class="ontips">右<span class="skytip right">;-)，向右的简单SkyTip</span></span>！
 			</p>
 			<p>以上都是我们用CSS方法添加的SkyTips!很棒吧。除此以外，我们可以在任何元素中添加SkyTips!</p>
 			<p>想知道怎么使用它么？Press it!↓</p>
-			<a href="#"><button class="ontips" tooltip-settings="tooltip top" tooltip-content="=w=我就知道你感兴趣">How to Use SkyTips!</button></a>
+			<a href="how-to-use.html"><button class="ontips" skytip-settings="skytip top" skytip-content="=w=我就知道你感兴趣">How to Use SkyTips!</button></a>
+		</div>
+		<div class="footer">
+			&copy;SkyAo 2015
 		</div>
 	</div>
 </body>

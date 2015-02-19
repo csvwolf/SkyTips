@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>How To Use SkyTips - SkyTips!</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/skytip.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/skytip.js"></script>
+</head>
+<body>
+	<header>
+		<h1 title="Just a skytip" skytip-settings="bottom custom default" skytip-content="Just a skytip" class="ontips">SkyTips!</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="how-to-use.html">How to Use</a></li>
+				<li><a href="http://xsky.me" target="_blank">Airzone</a></li>
+				<li><a href="http://codesky.me" target="_blank">CodeSky</a></li>
+			</ul>
+		</nav>
+		<!-- <div class="ribbon"><span>Hello World</span></div> -->
+	</header>
+	<div class="container">
+		<div class="content">
+			<h3>SkyTips使用指南</h3>
+			<blockquote>SkyTips允许你使用纯CSS(3)或者引入jQuery（如同其他tips那样）来运用，=w=总之是十分方便的哦~</blockquote>
+			<h4>首先，引入文件</h4>
+			<p>如果你只想使用CSS3，只需要引入CSS文件即可(Like this)：<code>&lt;link rel="stylesheet" type="text/css" href="css/skytip.css"&gt;</code></p>
+			<p>
+				如何你想要使用jQuery，需要引入jQuery和我们的skytip.js：
+				<br/>
+					<code>&lt;script type="text/javascript" src="js/jquery.js"&gt;&lt;/script&gt;</code>
+				<br/>
+					<code>&lt;script type="text/javascript" src="js/skytip.js"&gt;&lt;/script&gt;</code>
+			</p>
+			<h4>然后，调用吧！</h4>
+			<h5>只使用CSS文件的情况：</h5>
+			<p>首先，为需要使用skytips的文件设置（虽然应该什么元素都可以，但推荐内联元素）<code>class="ontips"</code>，然后，在里面构建一个<code>span</code>，设定他的class为<code>skytip</code>，之后设定方向：<code>top</code><code>bottom</code><code>left</code><code>right</code>，<span class="ontips">[hover to view demo]<span class="skytip top">这就是默认样式=w=</span></span></p>
+			<p>
+				需要额外样式支持的话，再后面先加个class：<code>custom</code>，然后加入样式标签（四选一）
+				<span class="ontips">primary<span class="skytip top custom primary">Primary</span></span>, 
+				<span class="ontips">info<span class="skytip bottom custom info">Info</span></span>, 
+				<span class="ontips">danger<span class="skytip left custom danger">Danger</span></span>,
+				<span class="ontips">warning<span class="skytip right custom warning">Warning</span></span>
+			</p>
+			<h5>使用jQuery的情况：</h5>
+			<p>同样，为需要使用skytips的文件设置（虽然应该什么元素都可以，但推荐内联元素）<code>class="ontips"</code>，然后在这里，我们需要用到两个属性<code>skytip-settings</code><code>skytip-content</code></p>
+			<p>在setting中，我们写入需要的除了skytip之外的class（见CSS情况），在content中我们写入需要显示的内容</p>
+			<p>OK，然后，你应该就能看到效果啦。（不用担心SEO的加入title等标签吧，我们会做处理的=w=）</p>
+			<blockquote>jQuery和CSS两种方法各有利弊，诸君自行选择吧~也可以混合使用=w=</blockquote>
+		</div>
+		<div class="footer">
+			&copy;SkyAo 2015
+		</div>
+	</div>
+</body>
+</html>
