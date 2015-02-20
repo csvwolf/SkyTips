@@ -1,0 +1,256 @@
+/* skytip default style */
+.skytip {
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.95);
+	color: #ffffff;
+	display: none;
+	font-size: 12px;
+	margin-top: 5px;
+	padding: 3px 10px;
+	position: absolute;
+	text-align: center;
+	white-space: nowrap;
+	border-radius: 5px;
+	z-index: 999;
+}
+
+/* skytip position */
+.skytip.bottom {
+	margin-top: 5px;
+	left: 50%;
+	top: 100%;
+	transform: translateX(-50%);
+}
+
+.skytip.right {
+	left: 100%;
+	bottom: 50%;
+	transform: translateY(50%);
+	margin-left: 10px;
+}
+
+.skytip.left {
+	right: 100%;
+	bottom: 50%;
+	transform: translateY(50%);	
+	margin-right: 10px;
+}
+
+.skytip.top {
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 5px;
+}
+
+/* skytip triangle */
+.skytip:before {
+	border-width: 5px;
+	content: "";
+	display: block;
+	float: left;
+	position: absolute;
+}
+
+
+/* skytip default triangle */
+.skytip.top:before {
+	border-color: rgba(0, 0, 0, 0.95) transparent transparent;
+	border-style: solid dashed dashed;
+	left: 50%;
+	top: 100%;
+	margin-left: -5px;
+}
+
+.skytip.bottom:before {
+	border-color: transparent transparent rgba(0, 0, 0, 0.95) transparent;
+	border-style: dashed dashed solid dashed;
+	left: 50%;
+	bottom: 100%;
+	margin-left: -5px;
+}
+
+.skytip.right:before {
+	border-color: transparent rgba(0, 0, 0, 0.95) transparent transparent;
+	border-style: dashed solid dashed dashed;
+	right: 100%;
+	top: 50%;
+	margin-top: -5px;
+}
+
+.skytip.left:before {
+	border-color: transparent transparent transparent rgba(0, 0, 0, 0.95);
+	border-style: dashed dashed dashed solid;
+	left: 100%;
+	top: 50%;
+	margin-top: -5px;
+}
+
+/* skytip custom style */
+.skytip.custom {
+	border: 3px solid;
+}
+
+.skytip.top.custom, .skytip.bottom.custom {
+	margin-top: 8px;
+}
+
+.skytip.left.custom {
+	margin-left: 8px;
+}
+
+.skytip.right.custom {
+	margin-right: 8px;
+}
+
+.skytip.top.custom:before {
+	margin-top: 3px;
+}
+
+.skytip.bottom.custom:before {
+	margin-bottom: 3px;
+}
+
+.skytip.left.custom:before {
+	margin-left: 3px;
+}
+
+.skytip.right.custom:before {
+	margin-right: 3px;
+}
+
+/* default: #aaa; */
+.skytip.primary {
+	border-color: rgba(207, 207, 207, 0.95);
+	background: rgba(255, 255, 255, 0.95);
+	color: #000;
+}
+
+.skytip.top.primary:before {
+	border-color: rgba(207, 207, 207, 0.95) transparent transparent transparent;
+}
+
+.skytip.bottom.primary:before {
+	border-color: transparent transparent rgba(207, 207, 207, 0.95) transparent;
+}
+
+.skytip.left.primary:before {
+	border-color: transparent transparent transparent rgba(207, 207, 207, 0.95);
+}
+
+.skytip.right.primary:before {
+	border-color: transparent rgba(207, 207, 207, 0.95) transparent transparent;
+}
+
+/* success */
+.skytip.success {
+	border-color: rgba(108, 202, 22, 0.95);
+	background: rgba(154, 241, 74, 0.95);
+	color: #336600;
+}
+
+.skytip.top.success:before {
+	border-color: rgba(108, 202, 22, 0.95) transparent transparent transparent;
+}
+
+.skytip.bottom.success:before {
+	border-color: transparent transparent rgba(108, 202, 22, 0.95) transparent;
+}
+
+.skytip.left.success:before {
+	border-color: transparent transparent transparent rgba(108, 202, 22, 0.95);
+}
+
+.skytip.right.success:before {
+	border-color: transparent rgba(108, 202, 22, 0.95) transparent transparent;
+}
+
+/* info */
+.skytip.info {
+	border-color: rgba(0, 90, 120, 0.95);
+	background: rgba(34, 143, 189, 0.95);
+	color: #00214F;
+}
+
+.skytip.top.info:before {
+	border-color: rgba(0, 90, 120, 0.95) transparent transparent transparent;
+}
+
+.skytip.bottom.info:before {
+	border-color: transparent transparent rgba(0, 90, 120, 0.95) transparent;
+}
+
+.skytip.left.info:before {
+	border-color: transparent transparent transparent rgba(0, 90, 120, 0.95);
+}
+
+.skytip.right.info:before {
+	border-color: transparent rgba(0, 90, 120, 0.95) transparent transparent;
+}
+
+/* warning */
+.skytip.warning {
+	border-color: rgba(241, 146, 0, 0.95);
+	background: rgba(245, 171, 0, 0.95);
+	color: #733C12;
+}
+
+.skytip.top.warning:before {
+	border-color: rgba(241, 146, 0, 0.95) transparent transparent transparent;
+}
+
+.skytip.bottom.warning:before {
+	border-color: transparent transparent rgba(241, 146, 0, 0.95) transparent;
+}
+
+.skytip.left.warning:before {
+	border-color: transparent transparent transparent rgba(241, 146, 0, 0.95);
+}
+
+.skytip.right.warning:before {
+	border-color: transparent rgba(241, 146, 0, 0.95) transparent transparent;
+}
+
+/* danger */
+.skytip.danger {
+	border-color: rgba(128, 24, 24, 0.95);
+	background: rgba(219, 69, 39, 0.95);
+	color: #6E280E;
+}
+
+.skytip.top.danger:before {
+	border-color: rgba(128, 24, 24, 0.95) transparent transparent transparent;
+}
+
+.skytip.bottom.danger:before {
+	border-color: transparent transparent rgba(128, 24, 24, 0.95) transparent;
+}
+
+.skytip.left.danger:before {
+	border-color: transparent transparent transparent rgba(128, 24, 24, 0.95);
+}
+
+.skytip.right.danger:before {
+	border-color: transparent rgba(128, 24, 24, 0.95) transparent transparent;
+}
+
+
+/* selected part */
+.ontips {
+	position: relative;
+	display: inline;
+}
+
+.ontips:hover .skytip {
+	display: inline-block;
+	animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
